@@ -84,7 +84,11 @@ function App() {
   }
 
   function playAudio2() {
+    audio.pause();
     audio2.play();
+    audio2.addEventListener("ended", () => {
+      audio.play();
+    });
   }
 
   return (
