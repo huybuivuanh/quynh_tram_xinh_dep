@@ -6,7 +6,7 @@ body {
 }
 
 .spacer {
-  height: 400px; /* Adjust height as needed */
+  height: 200px; /* Adjust height as needed */
 }
 
 .gif {
@@ -17,7 +17,7 @@ body {
 p {
   font-family: "Great Vibes", cursive;
   color: #fff67e;
-  font-size: 115px;
+  font-size: 80px;
 }
 
 .container {

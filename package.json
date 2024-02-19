@@ -2,7 +2,6 @@
   "name": "quynh_tram_xinh_dep",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://huybuivuanh.github.io/quynh_tram_xinh_dep",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
