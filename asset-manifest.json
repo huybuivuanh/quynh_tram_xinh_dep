@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/quynh_tram_xinh_dep/static/css/main.3170131d.css",
+    "main.js": "/quynh_tram_xinh_dep/static/js/main.d4783397.js",
+    "index.html": "/quynh_tram_xinh_dep/index.html",
+    "main.3170131d.css.map": "/quynh_tram_xinh_dep/static/css/main.3170131d.css.map",
+    "main.d4783397.js.map": "/quynh_tram_xinh_dep/static/js/main.d4783397.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3170131d.css",
+    "static/js/main.d4783397.js"
+  ]
+}
