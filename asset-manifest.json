@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/quynh_tram_xinh_dep/static/css/main.3170131d.css",
-    "main.js": "/quynh_tram_xinh_dep/static/js/main.2737e182.js",
+    "main.css": "/quynh_tram_xinh_dep/static/css/main.1938ff5a.css",
+    "main.js": "/quynh_tram_xinh_dep/static/js/main.12a6c7ef.js",
     "index.html": "/quynh_tram_xinh_dep/index.html",
-    "main.3170131d.css.map": "/quynh_tram_xinh_dep/static/css/main.3170131d.css.map",
-    "main.2737e182.js.map": "/quynh_tram_xinh_dep/static/js/main.2737e182.js.map"
+    "main.1938ff5a.css.map": "/quynh_tram_xinh_dep/static/css/main.1938ff5a.css.map",
+    "main.12a6c7ef.js.map": "/quynh_tram_xinh_dep/static/js/main.12a6c7ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.3170131d.css",
-    "static/js/main.2737e182.js"
+    "static/css/main.1938ff5a.css",
+    "static/js/main.12a6c7ef.js"
   ]
 }
