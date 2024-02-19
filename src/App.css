@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+body {
+  margin: 0 0 0 0;
+  align-items: center;
+}
+
+.spacer {
+  height: 400px; /* Adjust height as needed */
+}
+
+.gif {
+  height: 700px;
+  width: 700px;
+}
+
+p {
+  font-family: "Great Vibes", cursive;
+  color: #fff67e;
+  font-size: 115px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.heart-button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 30px 60px;
+  border-radius: 50px;
+  font-size: 40px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
