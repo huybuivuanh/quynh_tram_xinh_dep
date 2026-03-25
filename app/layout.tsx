@@ -7,7 +7,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-grey-100">{children}</body>
+      <body className="min-h-screen bg-pink-100 text-neutral-900 antialiased">
+        {children}
+      </body>
     </html>
   );
 }
