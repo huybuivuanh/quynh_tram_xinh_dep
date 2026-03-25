@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "gh-pages -d out",
+    "predeploy": "node scripts/create-nojekyll.js",
+    "deploy": "gh-pages -d out --dotfiles --nojekyll",
     "start": "next start",
     "lint": "eslint"
   },

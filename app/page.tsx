@@ -3,6 +3,11 @@ import Link from "next/link";
 import PageWrapper from "@/components/PageWrapper";
 
 export default function Home() {
+  const basePath =
+    process.env.NEXT_PUBLIC_BASE_PATH && process.env.NEXT_PUBLIC_BASE_PATH !== ""
+      ? process.env.NEXT_PUBLIC_BASE_PATH
+      : "";
+
   return (
     <PageWrapper contentClassName="mx-auto max-w-lg">
       <div className="flex w-full flex-col items-center gap-6 sm:gap-8 md:gap-10">
@@ -14,7 +19,7 @@ export default function Home() {
         </p>
         <div className="relative mx-auto w-fit max-w-full">
           <Image
-            src="/Envelope.png"
+            src={`${basePath}/Envelope.png`}
             alt="Envelope"
             width={320}
             height={320}

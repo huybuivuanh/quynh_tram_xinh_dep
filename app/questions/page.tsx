@@ -1,9 +1,22 @@
 "use client";
 import PageWrapper from "@/components/PageWrapper";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 export default function Questions() {
+  const basePath =
+    process.env.NEXT_PUBLIC_BASE_PATH && process.env.NEXT_PUBLIC_BASE_PATH !== ""
+      ? process.env.NEXT_PUBLIC_BASE_PATH
+      : "";
+
+  const withBasePath = useCallback(
+    (path: string) => {
+      const p = path.startsWith("/") ? path : `/${path}`;
+      return `${basePath}${p}`;
+    },
+    [basePath]
+  );
+
   const questions = [
     "Tui mún hỏi bà cái nì",
     "Nếu như cuối năm nay...",
@@ -39,7 +52,7 @@ export default function Questions() {
   const cupidAudioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    const audio = new Audio("/sounds/cupid.mp3");
+    const audio = new Audio(withBasePath("/sounds/cupid.mp3"));
     cupidAudioRef.current = audio;
 
     const play = () => {
@@ -60,7 +73,7 @@ export default function Questions() {
         cupidAudioRef.current = null;
       }
     };
-  }, []);
+  }, [withBasePath]);
 
   const stopCupidSound = () => {
     if (!cupidAudioRef.current) return;
@@ -70,7 +83,7 @@ export default function Questions() {
 
   const playSound = (src: string) => {
     // Use the browser Audio API (works after a user click/tap).
-    const audio = new Audio(src);
+    const audio = new Audio(withBasePath(src));
     audio.play().catch(() => {
       // Ignore playback errors (e.g., blocked autoplay).
     });
@@ -109,7 +122,7 @@ export default function Questions() {
       <div className="flex w-full flex-col items-center gap-6 text-center">
         <div className="relative mx-auto w-fit max-w-full">
           <Image
-            src={`/mimi_neko/${gifs[currentGif]}`}
+            src={withBasePath(`/mimi_neko/${gifs[currentGif]}`)}
             alt="Mimi Neko"
             width={500}
             height={500}
